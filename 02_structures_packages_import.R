@@ -158,3 +158,13 @@ BRRR::skrrrahh(7)
 read.csv("/Users/ivan/R/blastim_rstats_spring_scripts/data/heroes_information.csv")
 getwd()
 read.csv("heroes_information.csv")
+heroes <- read.csv("https://raw.githubusercontent.com/Pozdniakov/tidy_stats/refs/heads/master/data/heroes_information.csv",
+                   na.strings = c("NA", "-", "-99", " "))
+heroes
+?read.csv
+
+str(heroes)
+install.packages("tidytuesdayR")
+tuesdata <- tidytuesdayR::tt_load('2025-03-11')
+pixar_films <- tuesdata$pixar_films
+pixar_films <- read.csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-03-11/pixar_films.csv")
