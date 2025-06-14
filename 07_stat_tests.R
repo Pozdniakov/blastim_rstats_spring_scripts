@@ -152,7 +152,6 @@ heroes %>%
   table() %>%
   fisher.test()
   
-
 # Ковариация и корреляция -------------------------------------------------
 
 install.packages("Stat2Data")
@@ -218,3 +217,4 @@ heroes_clean <- heroes %>%
 cor.test(heroes_clean$Weight, heroes_clean$Height)
 cor.test(heroes_clean$Weight, heroes_clean$Height, method = "spearman")
 cor.test(heroes_clean$Weight, heroes_clean$Height, method = "kendall")
+

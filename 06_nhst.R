@@ -98,3 +98,7 @@ t.test(diet1$pre.weight, diet1$weight6weeks, paired = TRUE)
 
 diet2 <- diet %>%
   filter(Diet == 2)
+
+# aov(back$backpack_kg ~ back$BackProblems) %>% summary()
+# t.test(back$backpack_kg ~ back$BackProblems, var.equal = TRUE) 
+
